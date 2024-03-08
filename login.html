@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Website</title>
+    <link rel="shortcut icon" type="image" href='E:\html\Wt Project\images\bgicon.png'>
+    <link rel="stylesheet" href="login.css">
+    <h1 style="">Travelling Website</h1>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    
+    
+    <div class="wrapper">
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required id="username">
+                <label for="floatingInput">
+                    <i5 class='bx bxs-user-circle'></i5>
+            </div>
+            <div class="input-box">
+                <input type="Password" placeholder="Password" required id="password">
+                <i6 class='bx bxs-lock-alt'></i6>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>&nbsp;
+                <a href="a"><a href="forgot.html">Forgot password</a>
+            </div>
+            <button type="button" class="btn play_button">login</button>
+
+            <div class="register link">
+
+                <p>Don't have an account?
+                    <a href="a"><a href="register.html">
+                        
+                            <a1 href="#">
+                                
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                register
+                            </a1>
+                        </a>
+                
+                            </p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+
+        function check() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "system" && password == "password") {
+                window.location.href = "mainpage.html";
+            }
+            else {
+                window.alert("wrong username and password !!");
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+            }
+        }
+
+        document.querySelector(".play_button").addEventListener("click", check);
+
+    </script>
+
+
+</body>
+
+</html>
