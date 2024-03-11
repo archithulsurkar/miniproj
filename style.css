@@ -417,23 +417,23 @@ nav .content .links li label:hover{
   background-color: #2980b9; /* Change to the desired hover color */
 }
 
-.gallary{
+.gallery{
   padding: 120px 10% 120px;
 }
-.gallary .heading h3{
+.gallery .heading h3{
   font-size: 25px;
   letter-spacing: 2px;
   color: #2c3fa7;
   border-bottom: 2px solid #1c0a51;
 }
-.gallary-card{
+.gallery-card{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   align-items: center;
   gap: 0.90rem;
   margin-top: 30px;
 }
-.gallary-card .row img{
+.gallery-card .row img{
   width: 200px;
   padding: 10px;
   display: block;
@@ -441,11 +441,11 @@ nav .content .links li label:hover{
   transition: 0.5s;
   cursor: pointer;
 }
-.gallary-card .row img:hover{
+.gallery-card .row img:hover{
   transform: translateY(-10px);
 }
 @media (max-width:920px){
-  .gallary-card{
+  .gallery-card{
       grid-template-columns: 1fr;
   }
 }
